@@ -1,0 +1,70 @@
+.mainContainer {
+    width: 30%;
+    background-color: white;
+    padding-top: 30%;
+    position: relative;
+
+}
+
+.innerContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+
+}
+
+
+.calcValueContainer {
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    height: 19%;
+    padding: 2px;
+    
+}
+
+.valuePara {
+    display: block;
+    height: 99%;
+    width: 99%;
+    text-align: right;
+}
+
+.calcBtnContainer {
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+
+}   
+
+.numbersContainer {
+    width: 75%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.opsContainer {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    
+}
+
+.resultContainer {
+    height: 20%;
+    width: 100%;
+}
+
+.resultContainer button {
+    width: 50%;
+    margin: 2px;
+}
