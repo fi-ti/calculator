@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .mainContainer {
     width: 30%;
     background-color: white;
@@ -23,14 +26,16 @@
     border-radius: 4px;
     height: 19%;
     padding: 2px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .valuePara {
     display: block;
-    height: 99%;
-    width: 99%;
+    width: 98%;
     text-align: right;
+    margin: 0 auto;
 }
 
 .calcBtnContainer {
@@ -45,9 +50,10 @@
     height: 80%;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    
 }
 
 .opsContainer {
@@ -67,4 +73,25 @@
 .resultContainer button {
     width: 50%;
     margin: 2px;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 850px) {
+    .mainContainer {
+        width: 40%;
+        padding-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 650px) {
+    .mainContainer {
+        width: 50%;
+        padding-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px)  {
+    .mainContainer {
+        width: 90%;
+        padding-top: 90%;
+    }
 }
